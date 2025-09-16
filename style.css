@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* padding: 0  30px ; */
+}
+body{
+    width: 100%;
+    height: 2400px;
+    padding: 0px 30px;
+    background-color: #010101;
+}
+nav{
+    background-color: #010101;
+    width: 100%;
+    height: 70px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+    margin-left: 350px;
+    margin-top: 15px;
+} 
+.menu-toggle {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+      user-select: none;
+      margin-left: 15px;
+    }
+.logo-container{
+    display: flex;
+    justify-content: flex-start;
+}
+.home-container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 65px;
+    height: 45px;
+}
+h2{
+    margin-top: 13px;
+    font-family: "DM Sans", sans-serif;
+}
+.head{
+  font-family: "DM Sans", sans-serif;
+  font-size: 70px;
+  color: white;
+}
+.para{
+   font-family: "DM Sans", sans-serif;
+   font-size: 26px;
+   color: white;
+}
+.image{
+    width: 540px;
+    height: 500px;
+    margin-top: -430px;
+    margin-left: 690px;
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -340px;
+    margin-top: 40px;
+}
+.button1{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 160px;
+    height: 30px;
+    border: 1px solid rgb(255, 254, 254);
+}
+.button2{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 90px;    
+    height: 30px;
+    border: 1px solid rgb(255, 254, 254);
+}
+.why{
+    display: flex;
+    justify-content: center;
+}
+.btn2{
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+.choice{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+h2{
+    color: white;
+    font-size: 30px;  
+}
+.lorem{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.lp{
+    color: white;
+    font-size: 15px;
+    word-spacing: 3px;
+}
+.back{
+    width: 1600px;
+    height: 500px;
+    margin-top: -50px;
+}
+.frame{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -380px;
+}
+.fra-img{
+    width: 330px;
+    height: 180px;
+    border-radius: 20px;
+}
+.ex{
+    display: flex;
+    justify-content: center;
+    
+}
+.e-btn{
+    width: 140px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.rec{
+    width: 400px;
+    height: 490px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.bt{
+    display: flex;
+    justify-content: center;
+    margin-top: -460px;
+}
+.Au{
+    width: 70px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.about{
+    color: white;
+    font-size: 30px;
+    margin-left: 563px;
+    margin-top: 13px;
+    font-style: bold;
+    font-family: "DM Sans", sans-serif;
+}
+.Ap{
+    color: white;
+    font-size: 15px;
+    margin-left: 565px;
+    margin-top: 20px;
+    font-family: "DM Sans", sans-serif;
+}
+.num{
+    width: 480px;
+    height: 80px;
+    margin-left: 560px;
+    margin-top: 20px;
+}
+ .visual {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto);   /* 2 rows */
+  gap: 15px; /* space between images */
+  max-width: 100%; /* optional, adjust as needed */
+  /* margin-left: 15px; center on page */
+  margin-top: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px; /* optional styling */
+}
+.fast{
+    display: flex;
+    margin-top: 100px;
+    gap: 22px;
+}
+.fast img{
+    width: 382px;
+    height: 250px;
+}
+
+
+
+/* =============================
+   Tablets and smaller (<= 768px)
+   ============================= */
+@media (max-width: 768px) {
+  body {
+    width: 500px;
+    margin: 0px;
+    padding: 0 15px;
+  }
+  .logo-container{
+    margin-top: 60px;
+  }
+
+  .nav-links {
+        display: none; /* hide menu initially */
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        background: #010101;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .menu-toggle {
+        margin-top: 10px;
+        display: block; /* show toggle only on mobile */
+      }
+    
+  ul {
+       flex-direction: column;
+        display: flex !important;
+        gap: 10px;
+        background: none;
+        width: auto;
+        padding: 0;
+        margin-top: 60px;
+        margin-left: -5px;
+      }
+     
+
+  nav {
+    /* flex-direction: row; */
+    height: 100px;
+    padding: 10px;
+  }
+button{
+  margin-top: -10px;
+}
+  /* When toggled */
+  ul.show {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .head {
+    font-size: 40px;
+  }
+
+  .para {
+    font-size: 18px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    margin-left: -30px;
+    margin-top: 40px;
+  }
+
+  .btn {
+    flex-direction: column;
+    margin: 20px auto;
+    gap: 10px;
+  }
+
+  .back {
+    width: 100%;
+    height: 200px;
+  }
+
+  .frame {
+   
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .fra-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .rec {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  .main{
+    margin-top: 470px;
+  }
+  .Au{
+    margin-bottom: 0px;
+  }
+
+  .about{
+   margin-top: 30px;
+   margin-left: 10px;
+  }
+  h3{
+    margin-left: 2px;
+    text-align: center;
+  }
+  .Ap,
+  .num {
+    
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Visual images in 1 column */
+  .visual {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 50px;
+  }
+
+  .visual img {
+    height: auto;
+  }
+
+  .fast {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fast img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* =============================
+   Small Mobiles (<= 480px)
+   ============================= */
+@media (max-width: 480px) {
+  .head {
+    font-size: 32px;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+
+  .button1,
+  .button2,
+  .btn2,
+  .e-btn,
+  .Au {
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+  }
+}
