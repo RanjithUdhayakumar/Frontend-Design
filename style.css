@@ -13,7 +13,7 @@ body{
 nav{
     background-color: #010101;
     width: 100%;
-    height: 70px;
+    height: 71px;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -25,18 +25,20 @@ ul{
     gap: 100px;
     list-style: none;
     margin-left: 350px;
-    margin-top: 15px;
+    margin-top: 14px;
 } 
-.menu-toggle {
+.toggle {
       display: none;
-      font-size: 26px;
-      cursor: pointer;
+      font-size: 20px;
+      cursor:pointer;
       user-select: none;
-      margin-left: 15px;
+      margin-left: 100px;
     }
 .logo-container{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex;
+    /* margin-top: 20px; */
+
 }
 .home-container{
     display: flex;
@@ -45,9 +47,19 @@ ul{
 .logo{
     width: 65px;
     height: 45px;
+
+  }
+input{
+  margin-top: 20px;
+  margin-left: 10px;
+  }
+label{
+  margin-left: 15px;
+  margin-top: 23px;
 }
 h2{
-    margin-top: 13px;
+    margin-top: -28px;
+    margin-left: 70px;
     font-family: "DM Sans", sans-serif;
 }
 .head{
@@ -63,7 +75,7 @@ h2{
 .image{
     width: 540px;
     height: 500px;
-    margin-top: -430px;
+    margin-top: -400px;
     margin-left: 690px;
 }
 .btn{
@@ -227,24 +239,45 @@ h2{
     padding: 0 15px;
   }
   .logo-container{
-    margin-top: 60px;
+    margin-top: -20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo2{
+    display: flex;
+  }
+  #toggle:checked ~ #nav-links{
+    left: 0%;
+  }
+  h2{
+    font-size: 25px;
+    margin-top: 18px;
+    margin-left: 5px;
+  }
+  input{
+    margin-left: -70px;
+  }
+  label{
+    margin-right: 80px;
   }
 
-  .nav-links {
+  #nav-links {
         display: none; /* hide menu initially */
         flex-direction: column;
         gap: 15px;
         position: absolute;
         top: 65px;
-        left: 0;
+        left: -100%;
         background: #010101;
         width: 100%;
         padding: 20px;
-        text-align: center;
+
       }
 
-      .menu-toggle {
-        margin-top: 10px;
+      .toggle {
+        margin-bottom: 50px;
         display: block; /* show toggle only on mobile */
       }
     
@@ -253,10 +286,10 @@ h2{
         display: flex !important;
         gap: 10px;
         background: none;
-        width: auto;
+        width: 100px;
         padding: 0;
-        margin-top: 60px;
-        margin-left: -5px;
+        margin-top: 9px;
+        margin-left: 85px;
       }
      
 
@@ -271,7 +304,7 @@ button{
   /* When toggled */
   ul.show {
     display: flex;
-    margin-top: 10px;
+    margin-bottom: 100px;
     margin-left: 20px;
   }
 
@@ -287,7 +320,6 @@ button{
   .para {
     font-size: 18px;
   }
-
   .image {
     width: 100%;
     height: auto;
